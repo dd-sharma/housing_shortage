@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_df0ed8b9b171af1c30c019b8fd8ab71a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_df0ed8b9b171af1c30c019b8fd8ab71a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_df0ed8b9b171af1c30c019b8fd8ab71a = L.map(
+                "map_df0ed8b9b171af1c30c019b8fd8ab71a",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b0f7cfcab21bcc89b51c393a3168f83b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b0f7cfcab21bcc89b51c393a3168f83b.addTo(map_df0ed8b9b171af1c30c019b8fd8ab71a);
+        
+    
+            var circle_b8e30a3400de1a960e39bdf6b68fa1d6 = L.circle(
+                [40.7128, -74.006],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000.0, "stroke": true, "weight": 3}
+            ).addTo(map_df0ed8b9b171af1c30c019b8fd8ab71a);
+        
+    
+        var popup_40460a72c90b3056f47819995bdb096e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef8cbf9fb0a709143015a166159b8ba2 = $(`<div id="html_ef8cbf9fb0a709143015a166159b8ba2" style="width: 100.0%; height: 100.0%;">New York-Newark-Jersey City: 100.00% Cost Burden</div>`)[0];
+                popup_40460a72c90b3056f47819995bdb096e.setContent(html_ef8cbf9fb0a709143015a166159b8ba2);
+            
+        
+
+        circle_b8e30a3400de1a960e39bdf6b68fa1d6.bindPopup(popup_40460a72c90b3056f47819995bdb096e)
+        ;
+
+        
+    
+    
+            var circle_72323e63037790bef0b806972316ca08 = L.circle(
+                [34.0522, -118.2437],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 43731.64763458401, "stroke": true, "weight": 3}
+            ).addTo(map_df0ed8b9b171af1c30c019b8fd8ab71a);
+        
+    
+        var popup_2746d507ec8652c4f921a03f7a62a183 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90930e2a181e6d649bd8c68ce25d466e = $(`<div id="html_90930e2a181e6d649bd8c68ce25d466e" style="width: 100.0%; height: 100.0%;">Los Angeles-Long Beach-Anaheim: 43.73% Cost Burden</div>`)[0];
+                popup_2746d507ec8652c4f921a03f7a62a183.setContent(html_90930e2a181e6d649bd8c68ce25d466e);
+            
+        
+
+        circle_72323e63037790bef0b806972316ca08.bindPopup(popup_2746d507ec8652c4f921a03f7a62a183)
+        ;
+
+        
+    
+    
+            var circle_9a23685d1abb25b47605025c353d8051 = L.circle(
+                [41.8781, -87.6298],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 42084.01305057096, "stroke": true, "weight": 3}
+            ).addTo(map_df0ed8b9b171af1c30c019b8fd8ab71a);
+        
+    
+        var popup_5201b5808d0cb8a2268650114fa19824 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ff5f1113a580d0ae93f612619fb713b = $(`<div id="html_7ff5f1113a580d0ae93f612619fb713b" style="width: 100.0%; height: 100.0%;">Chicago-Naperville-Elgin: 42.08% Cost Burden</div>`)[0];
+                popup_5201b5808d0cb8a2268650114fa19824.setContent(html_7ff5f1113a580d0ae93f612619fb713b);
+            
+        
+
+        circle_9a23685d1abb25b47605025c353d8051.bindPopup(popup_5201b5808d0cb8a2268650114fa19824)
+        ;
+
+        
+    
+    
+            var circle_ae168b7398f3a2aa830bbf34db882066 = L.circle(
+                [32.7767, -96.797],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20077.48776508972, "stroke": true, "weight": 3}
+            ).addTo(map_df0ed8b9b171af1c30c019b8fd8ab71a);
+        
+    
+        var popup_4672eca238590d8dd8a141fd5711cab4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fc88856bd18cee6efbaa1b4521a4d94 = $(`<div id="html_0fc88856bd18cee6efbaa1b4521a4d94" style="width: 100.0%; height: 100.0%;">Dallas-Fort Worth-Arlington: 20.08% Cost Burden</div>`)[0];
+                popup_4672eca238590d8dd8a141fd5711cab4.setContent(html_0fc88856bd18cee6efbaa1b4521a4d94);
+            
+        
+
+        circle_ae168b7398f3a2aa830bbf34db882066.bindPopup(popup_4672eca238590d8dd8a141fd5711cab4)
+        ;
+
+        
+    
+    
+            var circle_fbce8e74c397ad3772cb5bce06535226 = L.circle(
+                [29.7604, -95.3698],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29539.15171288744, "stroke": true, "weight": 3}
+            ).addTo(map_df0ed8b9b171af1c30c019b8fd8ab71a);
+        
+    
+        var popup_1f7b97602d854884d1093e9b89c41d5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d60d03e2376d4de8a8d366e67ce81854 = $(`<div id="html_d60d03e2376d4de8a8d366e67ce81854" style="width: 100.0%; height: 100.0%;">Houston-The Woodlands-Sugar Land: 29.54% Cost Burden</div>`)[0];
+                popup_1f7b97602d854884d1093e9b89c41d5d.setContent(html_d60d03e2376d4de8a8d366e67ce81854);
+            
+        
+
+        circle_fbce8e74c397ad3772cb5bce06535226.bindPopup(popup_1f7b97602d854884d1093e9b89c41d5d)
+        ;
+
+        
+    
+    
+            var circle_53b0186bf4e1e36292398c40ee6c4e9b = L.circle(
+                [38.9072, -77.0369],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8413.539967373572, "stroke": true, "weight": 3}
+            ).addTo(map_df0ed8b9b171af1c30c019b8fd8ab71a);
+        
+    
+        var popup_5f5d0be3e61d8d8c1a292fee1ff0d448 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79fe9f4e54d4982a96cc71de3f347370 = $(`<div id="html_79fe9f4e54d4982a96cc71de3f347370" style="width: 100.0%; height: 100.0%;">Washington-Arlington-Alexandria: 8.41% Cost Burden</div>`)[0];
+                popup_5f5d0be3e61d8d8c1a292fee1ff0d448.setContent(html_79fe9f4e54d4982a96cc71de3f347370);
+            
+        
+
+        circle_53b0186bf4e1e36292398c40ee6c4e9b.bindPopup(popup_5f5d0be3e61d8d8c1a292fee1ff0d448)
+        ;
+
+        
+    
+    
+            var circle_613a934b3e12abe396691a9c78537c78 = L.circle(
+                [25.7617, -80.1918],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6753.670473083197, "stroke": true, "weight": 3}
+            ).addTo(map_df0ed8b9b171af1c30c019b8fd8ab71a);
+        
+    
+        var popup_64bf97121b99917f7ebbf43f6c1c75db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce0b559a63c416100af90195fcc0b7f5 = $(`<div id="html_ce0b559a63c416100af90195fcc0b7f5" style="width: 100.0%; height: 100.0%;">Miami-Fort Lauderdale-West Palm Beach: 6.75% Cost Burden</div>`)[0];
+                popup_64bf97121b99917f7ebbf43f6c1c75db.setContent(html_ce0b559a63c416100af90195fcc0b7f5);
+            
+        
+
+        circle_613a934b3e12abe396691a9c78537c78.bindPopup(popup_64bf97121b99917f7ebbf43f6c1c75db)
+        ;
+
+        
+    
+    
+            var circle_5225d18948051d61de5ab6be730c3620 = L.circle(
+                [39.9526, -75.1652],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1920.8809135399674, "stroke": true, "weight": 3}
+            ).addTo(map_df0ed8b9b171af1c30c019b8fd8ab71a);
+        
+    
+        var popup_f0819fa6ebc894bb8490b18c984639e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cda178878dcceb58837e0715138e998 = $(`<div id="html_8cda178878dcceb58837e0715138e998" style="width: 100.0%; height: 100.0%;">Philadelphia-Camden-Wilmington: 1.92% Cost Burden</div>`)[0];
+                popup_f0819fa6ebc894bb8490b18c984639e2.setContent(html_8cda178878dcceb58837e0715138e998);
+            
+        
+
+        circle_5225d18948051d61de5ab6be730c3620.bindPopup(popup_f0819fa6ebc894bb8490b18c984639e2)
+        ;
+
+        
+    
+    
+            var circle_c273a61e28f07da908e6f6575716fcce = L.circle(
+                [33.749, -84.388],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7822.185970636215, "stroke": true, "weight": 3}
+            ).addTo(map_df0ed8b9b171af1c30c019b8fd8ab71a);
+        
+    
+        var popup_2c1c62e0bc0e819da6db4ed7e53a15ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2100e4a98797f3fd01a0426bebf56f2c = $(`<div id="html_2100e4a98797f3fd01a0426bebf56f2c" style="width: 100.0%; height: 100.0%;">Atlanta-Sandy Springs-Roswell: 7.82% Cost Burden</div>`)[0];
+                popup_2c1c62e0bc0e819da6db4ed7e53a15ba.setContent(html_2100e4a98797f3fd01a0426bebf56f2c);
+            
+        
+
+        circle_c273a61e28f07da908e6f6575716fcce.bindPopup(popup_2c1c62e0bc0e819da6db4ed7e53a15ba)
+        ;
+
+        
+    
+    
+            var circle_ee269c70f13a6c8c5d184808b718efa1 = L.circle(
+                [42.3601, -71.0589],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6916.802610114192, "stroke": true, "weight": 3}
+            ).addTo(map_df0ed8b9b171af1c30c019b8fd8ab71a);
+        
+    
+        var popup_42fc5f2a0eddb28831a90970e9820ff1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b07cf68011117f5429e7dbc61380fc02 = $(`<div id="html_b07cf68011117f5429e7dbc61380fc02" style="width: 100.0%; height: 100.0%;">Boston-Cambridge-Newton: 6.92% Cost Burden</div>`)[0];
+                popup_42fc5f2a0eddb28831a90970e9820ff1.setContent(html_b07cf68011117f5429e7dbc61380fc02);
+            
+        
+
+        circle_ee269c70f13a6c8c5d184808b718efa1.bindPopup(popup_42fc5f2a0eddb28831a90970e9820ff1)
+        ;
+
+        
+    
+</script>
+</html>
