@@ -15,7 +15,7 @@ The project integrates both raw and preprocessed data from reputable sources, ca
     * Migration patterns and population dynamics (historical and projected).
     * Economic factors such as wages and unemployment rates.
 
-For more detailed information on Data sources see [directory data_info](OneDrive/general_assembly_dsb/project_capstone/data/data_info). 
+For more detailed information on Data sources see [directory data_info](/data/data_info).
 
 ## Key Findings
 
